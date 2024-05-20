@@ -55,8 +55,10 @@ public class MenuPrincipal {
 
             } else if (input < 12 && input > 0) {
                 Calculo convercion = new Calculo();
-                resultadoConvercion = "El resultado es; " +  convercion.ejecutarConvercion(input);
-                System.out.println(resultadoConvercion);
+                resultadoConvercion =  convercion.ejecutarConvercion(input);
+                System.out.println("El resultado de la convercion es: " + resultadoConvercion);
+                archivo.addLista(resultadoConvercion);
+                archivo.listado();
                 continuar();
             }
         }else {
@@ -96,8 +98,6 @@ public class MenuPrincipal {
                 continuar();
             } else {
                 if (opciones == 1) {
-                    archivo.addLista(resultadoConvercion);
-                    archivo.listado();
                     menu();
                 } else {
                     System.out.println("Gracias por usar mi Convertor");

@@ -92,7 +92,7 @@ public class Calculo {
         System.out.println("Ingrese el monto a cambiar");
         double totalidad = teclado.nextDouble();
         teclado.nextLine();
-        return decimal.format (totalidad * divisas.getConversion_rates().get(monedaSalida)/
+        return totalidad + monedaEntrada + " = " +  decimal.format (totalidad * divisas.getConversion_rates().get(monedaSalida)/
                 divisas.getConversion_rates().get(monedaEntrada)) + " " + monedaSalida;
 
     }
