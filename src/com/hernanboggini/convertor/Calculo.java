@@ -84,10 +84,6 @@ public class Calculo {
                 monedaSalida = teclado.nextLine().toUpperCase();
             case 12:
                 System.out.println(historial);
-
-
-
-
         }
         System.out.println("Ingrese el monto a cambiar");
         double totalidad = teclado.nextDouble();
